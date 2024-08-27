@@ -1,0 +1,144 @@
+# Question 1 Task 1: Implement a Responsive Navigation Bar component into your "Tech Solutions" webpage to create a responsive navigation bar that collapses into a toggleable menu on smaller screens.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Solutions</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Responsive Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Tech Solutions</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Optional: Other content sections -->
+
+<!-- Bootstrap JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+# Question 1 Task 1: Enhance Visual Appeal with Bootstrap Cards Replace Services Section standard HTML elements with Bootstrap Cards to showcase content in a visually appealing manner with consistent styling.
+<!-- Include Bootstrap CSS in the head of your document -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+<div class="container my-5">
+    <div class="row">
+        <!-- Service 1 -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="service1.jpg" class="card-img-top" alt="Service 1">
+                <div class="card-body">
+                    <h5 class="card-title">Service 1</h5>
+                    <p class="card-text">A brief description of Service 1.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <!-- Service 2 -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="service2.jpg" class="card-img-top" alt="Service 2">
+                <div class="card-body">
+                    <h5 class="card-title">Service 2</h5>
+                    <p class="card-text">A brief description of Service 2.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <!-- Service 3 -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="service3.jpg" class="card-img-top" alt="Service 3">
+                <div class="card-body">
+                    <h5 class="card-title">Service 3</h5>
+                    <p class="card-text">A brief description of Service 3.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Include Bootstrap JS at the end of your document -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+# Question 1 Task 3: Add Dynamic Interactivity with Bootstrap Buttons Incorporate Bootstrap Buttons with interactive hover effects to enhance user engagement and provide visual feedback when interacting with clickable elements.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Button Interaction</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        .btn-hover-effect {
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+
+        .btn-hover-effect:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-hover-effect:active {
+            transform: scale(1.05);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container text-center mt-5">
+        <button type="button" class="btn btn-primary btn-hover-effect">Click Me</button>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.btn-hover-effect').on('mouseenter', function() {
+                $(this).css('background-color', '#0056b3');
+            }).on('mouseleave', function() {
+                $(this).css('background-color', '#007bff');
+            });
+        });
+    </script>
+</body>
+</html>
+
